@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# ML / Data
+*.pth
+*.pt
+data/
+wandb/
+checkpoints/
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Logs
+*.log

@@ -12,14 +12,17 @@ Track your progress. Check items off as you complete them. Commit this file to y
 
 ### Week 1 — Environment + PyTorch refresher
 - [ ] Install Python 3.11, set up uv or conda environment
-- [ ] Install PyTorch (with CUDA if you have an NVIDIA GPU)
+- [ ] Install PyTorch (with MPS for Apple Silicon)
 - [ ] Create public GitHub repo `robotics-ramp` with intro README
-- [ ] Complete PyTorch 60-minute blitz tutorial
-- [ ] Build feedforward net on MNIST (commit notebook)
-- [ ] Build CNN on CIFAR-10 (commit notebook)
-- [ ] Build small RNN on character-level text (commit notebook)
-- [ ] Update README with what you learned this week
-- **Deliverable:** Three working notebooks committed with clean READMEs
+- [ ] Complete PyTorch fundamentals (MNIST feedforward classifier)
+- [ ] Build CNN on CIFAR-10
+- [ ] Build small RNN on character-level Shakespeare
+- [ ] Implement gradient descent from scratch
+- [ ] Implement backprop from scratch in NumPy (consolidation day)
+- [ ] Polish repo: README highlights, notebook intros, screenshots
+- [ ] Write Week 1 reflection (`week-01/REFLECTION.md`)
+- **Robotics Watch:** π0.5 demo video (Physical Intelligence blog) + Sergey Levine talk on YouTube
+- **Deliverable:** Three working notebooks + two from-scratch scripts + reflection
 
 ### Week 2 — Build a transformer from scratch
 - [ ] Watch Karpathy "Let's build GPT: from scratch" (~2 hrs, code along)
@@ -27,16 +30,19 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Implement your own ~300-line transformer in PyTorch
 - [ ] Train it on a dataset of your choice
 - [ ] Generate samples, document them in README
-- **Deliverable:** Working transformer in repo with training samples
+- [ ] Write blog post: "What I learned implementing a transformer"
+- **Robotics Watch:** Skim π0 paper / blog post (no math, just architecture diagrams). Note where you see transformers used.
+- **Deliverable:** Working transformer in repo with training samples + 1 blog post
 
 ### Week 3 — RL fundamentals + first robotics paper
-- [ ] CS285 Lecture 1 (intro)
-- [ ] CS285 Lecture 2 (supervised learning of behaviors / imitation learning)
-- [ ] CS285 Lecture 3 (PyTorch tutorial / intro to RL)
-- [ ] CS285 Lecture 4 (intro to RL)
+- [ ] CS224R Lecture 1 (Class intro, MDPs, why deep RL)
+- [ ] CS224R Lecture 2 (Imitation learning intro)
+- [ ] CS224R Lecture 3 (Imitation learning advanced)
+- [ ] CS224R Lecture 4 (Policy gradients intro)
 - [ ] Create `paper-notes/` folder in repo
 - [ ] Read ALOHA paper (Zhao et al.)
 - [ ] Write 1-paragraph summary of ALOHA in `paper-notes/aloha.md`
+- **Robotics Watch:** Boston Dynamics Atlas demo + Agility Robotics Digit warehouse demo. Compare in 1 paragraph.
 - **Deliverable:** Lecture notes + first paper summary committed
 
 ### Week 4 — First simulated robot
@@ -45,7 +51,8 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Run a pretrained policy in MuJoCo or sim
 - [ ] Fine-tune diffusion policy on pusht example from scratch
 - [ ] Capture video of trained policy working
-- [ ] Write `month-1-recap.md` blog post draft (lessons + screenshots)
+- [ ] Write `month-1-recap.md` blog post draft
+- **Robotics Watch:** Read ALOHA paper's introduction and methods sections (skip math). Notice the architecture overlap with what you've built.
 - **Deliverable:** Trained policy + video + write-up in repo
 
 **End of Month 1 self-check:**
@@ -59,15 +66,16 @@ Track your progress. Check items off as you complete them. Commit this file to y
 
 ### Week 5 — Order hardware, deepen RL, more papers
 - [ ] Order SO-101 arm (or ALOHA setup if budget allows)
-- [ ] CS285 Lecture 5 (policy gradients)
-- [ ] CS285 Lecture 6 (actor-critic)
-- [ ] CS285 Lecture 7 (value function methods)
-- [ ] CS285 Lecture 8 (deep RL with Q-functions)
-- [ ] CS285 Lecture 9 (advanced policy gradients)
-- [ ] CS285 Lecture 10 (optimal control & planning)
+- [ ] CS224R Lecture 5 (Policy gradients advanced)
+- [ ] CS224R Lecture 6 (Actor-critic methods)
+- [ ] CS224R Lecture 7 (Value-based methods / Q-learning)
+- [ ] CS224R Lecture 8 (Model-based RL)
+- [ ] CS224R Lecture 9 (Offline RL intro)
+- [ ] CS224R Lecture 10 (Offline RL advanced)
 - [ ] Read Diffusion Policy paper, write summary
 - [ ] Read ACT paper, write summary
 - [ ] Read RT-2 paper, write summary
+- **Robotics Watch:** 3Blue1Brown "Essence of Linear Algebra" series (~3 hrs over the week) — refresh matrix intuition before capstone work.
 - **Deliverable:** 3 more paper notes + lecture progress documented
 
 ### Week 6 — Hardware setup + teleoperation
@@ -78,9 +86,10 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Get teleoperation working (leader-follower or keyboard)
 - [ ] Record video of yourself teleoperating
 - [ ] Write up setup process including failures in repo
+- **Robotics Watch:** V-JEPA 2 paper + Cosmos paper (Nvidia world model) — skim, focus on the "video pre-training → action fine-tuning" pipeline (the WAM idea).
 - **Deliverable:** Teleoperation video + setup guide committed
 
-### Week 7 — Data collection + first real fine-tune
+### Week 7 — Data collection + first real fine-tune + classical robotics literacy
 - [ ] Pick a specific visual task (write it down precisely)
 - [ ] Set up your workspace + objects
 - [ ] Collect 50 teleoperation demonstrations
@@ -89,6 +98,8 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Evaluate policy — record success rate over 20 trials
 - [ ] Iterate at least once: more data OR different policy
 - [ ] Capture final video + write up results honestly
+- [ ] **Classical robotics literacy module (2 hrs):** Forward kinematics intuition, what a Jacobian is, what SLAM and motion planning are at a high level. No coding — just literacy.
+- **Robotics Watch:** Kevin Wood's robotics roadmap video — for awareness of the traditional stack you're choosing not to specialize in.
 - **Deliverable:** Real robot doing your task + video + honest write-up
 
 ### Week 8 — Read π0, π0.5, OpenVLA + start blogging
@@ -102,6 +113,7 @@ Track your progress. Check items off as you complete them. Commit this file to y
   - [ ] Be honest about what was hard
   - [ ] Include videos/screenshots
 - [ ] Publish blog post, share on LinkedIn + X/Twitter
+- **Robotics Watch:** Find a recent (2025-2026) talk by Karol Hausman or Chelsea Finn from Pi — both teach CS224R, both lead Pi. Pick one 30-min talk.
 - **Deliverable:** 4 paper notes + 1 substantive blog post live
 
 **End of Month 2 self-check:**
@@ -127,6 +139,7 @@ Track your progress. Check items off as you complete them. Commit this file to y
   - [ ] Stretch goals
 - [ ] Set up new repo or sub-directory for capstone
 - [ ] First commits: skeleton structure + dependencies
+- **Robotics Watch:** Find one recent talk from your target capstone's domain (Pi infra talk for Path A; reliability/eval talk from Figure or Skild for Path B; Nvidia GR00T inference talk for Path C).
 - **Deliverable:** Capstone scoped, design doc committed, project skeleton in place
 
 ### Week 10 — Build capstone (week 1 of 2)
@@ -135,6 +148,7 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Hit your first major milestone from the design doc
 - [ ] Document tradeoffs and decisions as you go
 - [ ] Update design doc with reality checks
+- **Robotics Watch:** Skip this week — focus is execution. Capstone is your robotics watch.
 - **Deliverable:** Capstone half-built, working end-to-end on small scale
 
 ### Week 11 — Finish capstone + start outreach
@@ -147,6 +161,7 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - [ ] Make outreach list: 15-20 people in target companies (LinkedIn search)
 - [ ] Send 5 outreach messages this week (template in `outreach.md`)
 - [ ] Update your LinkedIn headline + about section
+- **Robotics Watch:** Read recent posts from Pi, Skild, Figure, 1X — get a sense of the public voice of each company so your outreach can reference it specifically.
 - **Deliverable:** Capstone shipped, blog #2 live, 15+ contacts, 3+ replies
 
 ### Week 12 — Apply, interview, iterate
@@ -168,6 +183,7 @@ Track your progress. Check items off as you complete them. Commit this file to y
   - [ ] Practice 5-min capstone walkthrough out loud
   - [ ] Practice "why robotics now" story
 - [ ] Track applications + outreach in spreadsheet
+- **Robotics Watch:** Watch one recent VLA-vs-WAM debate clip (e.g., LeCun talk, 1X Bernt talk) so you have a current view for interview discussion.
 - **Deliverable:** 8+ applications submitted, 2+ warm intros, first phone screens scheduled
 
 ---
@@ -180,6 +196,15 @@ Track your progress. Check items off as you complete them. Commit this file to y
 - **Hardware will fight you.** Budget extra time in weeks 6-7. Document the fights.
 - **Your 8 years of SWE is the asset, not the liability.** Lead with it in interviews.
 - **Coffee chats > cold applications.** Warm intros are 10x more effective.
+- **Robotics Watch is not optional.** 20-30 min/week of curated viewing keeps the destination visible. Skip it and motivation erodes by Week 5.
+
+## Course choice notes
+
+**Primary RL course: CS224R (Stanford, Chelsea Finn + Karol Hausman).** Spring 2025 lectures on YouTube. Robotics-flavored throughout, taught by Pi co-founders. Heavier emphasis on imitation learning and offline RL — the techniques behind modern VLAs.
+
+**Reference / optional: CS285 (Berkeley, Sergey Levine).** Wider RL coverage, more math-heavy. Useful as a deeper reference if any CS224R topic feels under-explained. Also taught by a Pi co-founder.
+
+Both courses are taught by Pi people. CS224R is the more direct fit; CS285 is the deeper foundation if you want it.
 
 ## Budget tracking
 

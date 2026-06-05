@@ -1,6 +1,6 @@
-""""""
+"""
 # Week 2 Day 1 - Bigram Language Model
-""""""
+"""
 
 import torch
 import torch.nn as nn

@@ -23,6 +23,8 @@ env/
 data/
 wandb/
 checkpoints/
+# Auto-downloaded training corpus (re-fetched by the scripts on first run)
+shakespeare.txt
 
 # Jupyter
 *.ipynb_checkpoints

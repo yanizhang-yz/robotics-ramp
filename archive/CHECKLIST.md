@@ -1,5 +1,9 @@
 # 90-Day Robotics Ramp — Weekly Checklist
 
+> **Archived — superseded by [ROADMAP.md](../ROADMAP.md).** Kept for the original
+> week-by-week breakdown, the reflection log, and the budget tracker. The live plan is the
+> ROADMAP's two-track (learning + shipping) framing.
+
 Track your progress. Check items off as you complete them. Commit this file to your repo and update it weekly — it doubles as a public progress log that recruiters will see.
 
 **Start date:** _____________

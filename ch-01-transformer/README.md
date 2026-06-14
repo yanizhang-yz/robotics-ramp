@@ -1,4 +1,4 @@
-# Week 2 — Building a Transformer from Scratch
+# Chapter 1 — Building a Transformer from Scratch
 
 Following Andrej Karpathy's *"Let's build GPT: from scratch"* and reading the
 original *Attention Is All You Need* paper. Goal: implement a decoder-only

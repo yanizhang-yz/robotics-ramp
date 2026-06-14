@@ -1,31 +1,41 @@
 # Robotics Ramp
 
-A 90-day, public log of my transition from senior software engineer (8 years, Silicon Valley) into AI-for-robotics.
+My transition from senior software engineer (8 years) into AI-for-robotics — learned
+**depth-first** and built in public. Started **April 29, 2026**.
 
-**Started:** April 29, 2026
-**Background:** 8 years SWE, no ML or robotics experience prior to this.
+This repo is the *"understand the field from first principles"* half: **the plan and the
+study chapters.** The hands-on hardware work — milestones **M0–M4** — lives in the
+companion **`lerobot-experiments`** repo.
 
-## What's in this repo
+## The plan
 
-- `week-01/` — PyTorch fundamentals: feedforward, CNN, RNN
-- `week-02/` — Building a transformer from scratch (Karpathy follow-along)
-- `week-03/` — RL foundations + first robotics paper notes
-- `week-04/` — First simulated robot (LeRobot + diffusion policy)
-- `paper-notes/` — Summaries of the papers I'm reading
-- `blog/` — Longer write-ups on what I'm learning
-- `CHECKLIST.md` — My week-by-week plan with progress
+**[ROADMAP.md](ROADMAP.md) is the single source of truth.** Two tracks:
 
-## Approach
+- **Learning** — the chapters below, pulled depth-first, no deadlines.
+- **Shipping** — milestones M0–M4 on a rough clock, executed in `lerobot-experiments`.
 
-I'm working in public. Code is committed daily even when ugly. Failures and dead ends are documented alongside successes — that's the actual work.
+## Chapters
+
+| # | Chapter | What | Status |
+|---|---------|------|--------|
+| 0 | [Foundations](ch-00-foundations/) | PyTorch from scratch: MNIST, CNN, RNN, backprop, autograd | ✅ |
+| 1 | [Transformer](ch-01-transformer/) | Decoder-only transformer from scratch (val loss 1.49) | ✅ |
+| 2 | [RL core](ch-02-rl/) | CS224R: value iteration, Q-learning, REINFORCE | 🟡 |
+| 3 | [Bridge to robotics](ch-03-bridge-to-robotics/) | Behavior cloning, Diffusion Policy, ACT | ⬜ |
+| 4 | [VLAs](ch-04-vlas/) | Vision-Language-Action models; VLA vs world-models | ⬜ |
+| 5 | [Policy architectures](ch-05-policy-architectures/) | How the pieces fit in the LeRobot stack | ⬜ |
+
+## How I work
+
+Build first, *then* diff against the reference implementation — that's where the
+understanding lands. Code committed in public even when ugly; failures documented
+alongside the wins.
 
 ## Stack
 
-- Python 3.11, PyTorch with MPS (Apple Silicon)
-- Hugging Face LeRobot for robot learning
-- MuJoCo for simulation
-- Weights & Biases for experiment tracking
+Python 3.12 · PyTorch (MPS / Apple Silicon) · Hugging Face LeRobot · MuJoCo · Weights & Biases
 
-## Reading list
+---
 
-Working through (in order): ALOHA → Diffusion Policy → ACT → RT-2 → OpenVLA → π0 → π0.5 → Mobile ALOHA. Notes in `paper-notes/`.
+*Planning archive: the original week-by-week [CHECKLIST](archive/CHECKLIST.md) (superseded by
+the ROADMAP) and the [capstone path options](CAPSTONE_PATHS.md).*

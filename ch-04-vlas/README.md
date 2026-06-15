@@ -9,4 +9,4 @@ The current frontier of generalist robot policies:
   vs. predict the *future* and plan through it.
 
 Reading and notes here; the language-conditioned hardware milestone (M4) lives in
-`lerobot-experiments`.
+`robotics-experiments`.

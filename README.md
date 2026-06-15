@@ -5,14 +5,14 @@ My transition from senior software engineer (8 years) into AI-for-robotics — l
 
 This repo is the *"understand the field from first principles"* half: **the plan and the
 study chapters.** The hands-on hardware work — milestones **M0–M4** — lives in the
-companion **`lerobot-experiments`** repo.
+companion **`robotics-experiments`** repo.
 
 ## The plan
 
 **[ROADMAP.md](ROADMAP.md) is the single source of truth.** Two tracks:
 
 - **Learning** — the chapters below, pulled depth-first, no deadlines.
-- **Shipping** — milestones M0–M4 on a rough clock, executed in `lerobot-experiments`.
+- **Shipping** — milestones M0–M4 on a rough clock, executed in `robotics-experiments`.
 
 ## Chapters
 
